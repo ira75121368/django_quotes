@@ -25,3 +25,7 @@ urlpatterns = [
 	path('', include('quotes.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + debug_toolbar_urls()
 
+
+admin.site.site_header = 'Страница для администратора'
+admin.site.index_title = 'Цитаты'
+
