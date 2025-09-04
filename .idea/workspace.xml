@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="first commit">
+    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit with db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/quotes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitequotes/sitequotes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/sitequotes/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +104,28 @@
       <option name="project" value="LOCAL" />
       <updated>1756823574417</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit with db">
+      <option name="closed" value="true" />
+      <created>1756969853799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756969853799</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit with db">
+      <option name="closed" value="true" />
+      <created>1756969869969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756969869969</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="commit with db" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit with db" />
   </component>
 </project>

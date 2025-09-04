@@ -16,7 +16,7 @@ class Source(models.Model):
         return f'{self.name} - {self.category.name}'
 
 
-class Quetes(models.Model):
+class Quotes(models.Model):
     text_quotes = models.TextField(unique=True)
     time_created = models.DateTimeField(auto_now_add=True)
     weight = models.IntegerField(default=1)
