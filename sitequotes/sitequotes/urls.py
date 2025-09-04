@@ -27,5 +27,5 @@ urlpatterns = [
 
 
 admin.site.site_header = 'Страница для администратора'
-admin.site.index_title = 'Цитаты'
+admin.site.index_title = 'Цитаты из книг и фильмов'
 

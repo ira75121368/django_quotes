@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
 
@@ -14,7 +15,7 @@ class Categories(models.Model):
 
 class Source(models.Model):
     name = models.CharField(max_length=255, db_index=True, verbose_name='Название источника')
-    category = models.ForeignKey(Categories, on_delete=models.PROTECT)
+    category = models.ForeignKey(Categories, on_delete=models.PROTECT, verbose_name='Категория')
 
     class Meta:
         verbose_name = "Источник"
@@ -31,7 +32,7 @@ class Quotes(models.Model):
     likes = models.PositiveIntegerField(default=0, verbose_name='Лайки')
     dislikes = models.PositiveIntegerField(default=0, verbose_name='Дизлайки')
     views = models.PositiveIntegerField(default=0, verbose_name='Просмотры')
-    source = models.ForeignKey(Source, on_delete=models.PROTECT, verbose_name='Источник')
+    source = models.ForeignKey(Source, on_delete=models.PROTECT, null=False, verbose_name='Источник')
 
     class Meta:
         verbose_name = "Цитата"
@@ -39,3 +40,11 @@ class Quotes(models.Model):
 
     def __str__(self):
         return self.text_quotes
+
+    def clean(self):
+        if self.source and self.source.quotes_set.count() >= 3:
+            raise ValidationError('У этого источника уже есть 3 цитаты')
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
