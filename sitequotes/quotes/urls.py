@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-	path('', views.index, name='home'),
-	path('top-10', views.top, name='top')
+	path('', views.index, name='index'),
+	path('like/<int:pk>/', views.like_quote, name='like_quote'),
+	path('dislike/<int:pk>/', views.dislike_quote, name='dislike_quote'),
+	path('top-10/', views.top, name='top')
 ]

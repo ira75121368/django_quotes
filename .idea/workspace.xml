@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit unique_quote">
+    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit index and views_add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/quotes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/models.py" afterDir="false" />
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757002384757</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit index and views_add">
+      <option name="closed" value="true" />
+      <created>1757056489544</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1757056489544</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +178,7 @@
     <MESSAGE value="commit register all table" />
     <MESSAGE value="commit limit_for_the_source" />
     <MESSAGE value="commit unique_quote" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit unique_quote" />
+    <MESSAGE value="commit index and views_add" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit index and views_add" />
   </component>
 </project>

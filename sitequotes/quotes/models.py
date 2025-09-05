@@ -70,6 +70,6 @@ class Quotes(models.Model):
 
     def increment_views(self):
         """ Увеличивает только счётчик просмотров """
-        Quotes.objects.filter(pk=self.pk).update(views=models.F("views") + 1)
+        Quotes.objects.filter(pk=self.pk).update(views=models.F('views') + 1)
         self.refresh_from_db(fields=["views"])
 
