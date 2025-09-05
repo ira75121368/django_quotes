@@ -31,5 +31,17 @@ def dislike_quote(request, pk):
 
 
 def top(request):
-    return render(request, 'quotes/top.html')
+    sort = request.GET.get('sort', 'likes')
+
+    if sort == 'likes':
+        quotes = Quotes.objects.order_by('-likes')[:10]
+        title = "Топ по лайкам"
+    elif sort == 'dislikes':
+        quotes = Quotes.objects.order_by('-dislikes')[:10]
+        title = "Топ по дизлайкам"
+    else:
+        quotes = Quotes.objects.order_by('-views')[:10]
+        title = "Топ по просмотрам"
+
+    return render(request, 'quotes/top.html', {'quotes': quotes, 'title': title})
 # Create your views here.

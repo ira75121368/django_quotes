@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Топ</title>
+    <title>{{ title }}</title>
 </head>
 <body>
+    <h1>{{ title }}</h1>
 
+    <nav>
+        <a href="?sort=likes"> По лайкам</a>
+        <a href="?sort=dislikes"> По дизлайкам</a>
+        <a href="?sort=views"> По просмотрам</a>
+    </nav>
+    <hr>
+
+    {% if quotes %}
+        {% for item in quotes %}
+            <p><strong>{{ forloop.counter }}. {{ item.text_quotes }}</strong>
+                - 👍 {{ item.likes }} | 👎 {{ item.dislikes }} |👀 {{ item.views }}
+            </p><br>
+        {% endfor %}
+    {% endif %}
 </body>
 </html>
