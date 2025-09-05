@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Цитата</title>
 </head>
 <body>
-
+    {% if quote %}
+  <h1>{{ quote.text_quotes }}</h1>
+  <p><i>Источник: {{ quote.source.name }}</i></p>
+  <p>Лайки: {{ quote.likes }} | Дизлайки: {{ quote.dislikes }} | Просмотры: {{quote.views}}</p>
+{% endif %}
 </body>
 </html>

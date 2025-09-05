@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit limit_for_the_source">
+    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit unique_quote">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/quotes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756997670035</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit unique_quote">
+      <option name="closed" value="true" />
+      <created>1757002384757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1757002384757</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -158,6 +169,7 @@
     <MESSAGE value="commit(right db) + register(Quotes)" />
     <MESSAGE value="commit register all table" />
     <MESSAGE value="commit limit_for_the_source" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit limit_for_the_source" />
+    <MESSAGE value="commit unique_quote" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit unique_quote" />
   </component>
 </project>
