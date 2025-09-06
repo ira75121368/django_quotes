@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
-<body>
+{% extends 'quotes/base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
     <h1>{{ title }}</h1>
 
     <nav>
-        <a href="?sort=likes"> По лайкам</a>
+        <a href="?sort=likes" > По лайкам</a>
         <a href="?sort=dislikes"> По дизлайкам</a>
         <a href="?sort=views"> По просмотрам</a>
     </nav>
@@ -21,5 +19,5 @@
             </p><br>
         {% endfor %}
     {% endif %}
-</body>
-</html>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+/* Общие настройки */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Кнопки-фильтры */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav a {
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #eee;
+    color: #333;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background: #16601b;
+    color: #fff;
+}
+
+/* Список цитат */
+.quote-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.quote-item:last-child {
+    border-bottom: none;
+}
+
+.quote-text {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.badges {
+    display: flex;
+    gap: 10px;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge.likes { background: #28a745; }
+.badge.dislikes { background: #dc3545; }
+.badge.views { background: #6c757d; }
