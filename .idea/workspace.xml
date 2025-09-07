@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit top.html (filter + output)">
+    <list default="true" id="b06146dc-e0aa-4303-9f1f-2f99bdc560d2" name="Changes" comment="commit style_css">
+      <change afterPath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/db_quotes.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/static/quotes/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/static/quotes/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/templates/quotes/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitequotes/quotes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitequotes/quotes/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757078449297</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit style_css">
+      <option name="closed" value="true" />
+      <created>1757144014928</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1757144014928</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -195,6 +208,7 @@
     <MESSAGE value="commit index and views_add" />
     <MESSAGE value="commit index and views_likes_dislikes" />
     <MESSAGE value="commit top.html (filter + output)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit top.html (filter + output)" />
+    <MESSAGE value="commit style_css" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit style_css" />
   </component>
 </project>

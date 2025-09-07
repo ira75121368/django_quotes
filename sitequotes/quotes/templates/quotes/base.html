@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="{% static 'quotes/css/style.css' %}">
     <title>{% block title %} {% endblock %}</title>
 </head>
-<body class="bg-light">
+<body class="site-header">
     <header>
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}">Цитаты</a></li>
                 <li><a href="{% url 'top' %}">Топ Цитат</a></li>
-                <li><a href="{% url 'top' %}">Мини-аналитика</a></li>
+                <li><a href="{% url 'dashboard' %}">Мини-аналитика</a></li>
             </ul>
         </nav>
     </header>

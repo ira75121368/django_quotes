@@ -7,8 +7,8 @@
         <h1>{{ quote.text_quotes }}</h1>
         <p><i>Источник: {{ quote.source.name }}</i></p>
         <p>
-            <a href="{% url 'like_quote' quote.pk %}">👍 {{ quote.likes }}</a>
-            <a href="{% url 'dislike_quote' quote.pk %}">👎 {{ quote.dislikes }}</a>
+            <a href="{% url 'like_quote' quote.pk %}" style="text-decoration: none;">👍🏻 {{ quote.likes }}</a>
+            <a href="{% url 'dislike_quote' quote.pk %}" style="text-decoration: none;">👎🏻 {{ quote.dislikes }}</a>
         </p>
         <p>Лайки: {{ quote.likes }} | Дизлайки: {{ quote.dislikes }} | Просмотры: {{quote.views}}</p>
     {% endif %}

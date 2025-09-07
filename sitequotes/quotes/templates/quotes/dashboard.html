@@ -1,0 +1,21 @@
+{% extends 'quotes/base.html' %}
+
+{% block title %}Дашборд{% endblock %}
+
+{% block content %}
+<h1> Мини-дашборд</h1>
+
+<div class="stats">
+    <div class="card">Всего цитат: <b>{{ total_quotes }}</b></div>
+    <div class="card">👍🏻 Лайков: <b>{{ total_likes }}</b></div>
+    <div class="card">👎🏻 Дизлайков: <b>{{ total_dislikes }}</b></div>
+    <div class="card">👀 Просмотров: <b>{{ total_views }}</b></div>
+</div>
+<br>
+{% if top_quote %}
+    <h2> Лидер по лайкам:</h2>
+    <blockquote>{{ top_quote.text_quotes }}</blockquote>
+    <p>👍🏻 {{ top_quote.likes }}</p>
+{% endif %}
+
+{% endblock %}

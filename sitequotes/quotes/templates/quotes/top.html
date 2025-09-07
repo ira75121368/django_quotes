@@ -5,7 +5,7 @@
 {% block content %}
     <h1>{{ title }}</h1>
 
-    <nav>
+    <nav class="button-filter">
         <a href="?sort=likes" > По лайкам</a>
         <a href="?sort=dislikes"> По дизлайкам</a>
         <a href="?sort=views"> По просмотрам</a>
@@ -15,7 +15,7 @@
     {% if quotes %}
         {% for item in quotes %}
             <p><strong>{{ forloop.counter }}. {{ item.text_quotes }}</strong>
-                - 👍 {{ item.likes }} | 👎 {{ item.dislikes }} |👀 {{ item.views }}
+                - 👍🏻 {{ item.likes }} | 👎🏻 {{ item.dislikes }} |👀 {{ item.views }}
             </p><br>
         {% endfor %}
     {% endif %}
