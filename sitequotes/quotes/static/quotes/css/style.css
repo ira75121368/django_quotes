@@ -113,3 +113,66 @@ h1 {
 .badge.likes { background: #28a745; }
 .badge.dislikes { background: #dc3545; }
 .badge.views { background: #6c757d; }
+
+
+/* Контейнер формы */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Подписи к полям */
+.form-quote {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Поля ввода */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Ошибки */
+.form-error {
+    color: #dc3545;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Кнопка */
+form button {
+    padding: 10px 18px;
+    background: grey;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background: #16601b;
+    color: white;
+}
