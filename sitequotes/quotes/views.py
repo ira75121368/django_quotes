@@ -1,10 +1,12 @@
 import random
 
+from django.core.exceptions import ValidationError
 from django.db.models import F
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect
 from django.db.models import Sum, Count
 
+from .forms import AddQuoteForm
 from .models import Quotes
 
 
@@ -64,3 +66,21 @@ def dashboard(request):
         "top_quote": top_quote,
     }
     return render(request, 'quotes/dashboard.html', context)
+
+
+def add_quote(request):
+    if request.method == 'POST':
+        form = AddQuoteForm(request.POST)
+        if form.is_valid():
+            try:
+                form.save()
+                return redirect('add')
+            except ValidationError as e:
+                form.add_error(None, e.message)
+    else:
+        form = AddQuoteForm()
+    data = {
+        'title': 'Добавление новых цитат',
+        'form': form,
+    }
+    return render(request, 'quotes/add.html', data)

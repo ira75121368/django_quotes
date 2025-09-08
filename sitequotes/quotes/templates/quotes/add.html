@@ -1,0 +1,29 @@
+{% extends 'quotes/base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+
+    {% if form.non_field_errors %}
+        <div class="form-error">
+            {% for err in form.non_field_errors %}
+                <p>{{ err }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% for f in form %}
+        <p>
+            <label class="form-quote" for="{{ f.id_for_label }}">{{ f.label }}</label>
+            {{ f }}
+        </p>
+        <div class="form-error">{{ f.errors }}</div>
+    {% endfor %}
+
+    <p><button type="submit">Отправить</button></p>
+</form>
+
+
+{% endblock %}
